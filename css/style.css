@@ -1,0 +1,68 @@
+/*configuraçoes iniciais do projecto==> Incluindo outros css*/
+
+@import url('home_index.css');
+@import url('');
+@import url('');
+
+/*configuraçoes iniciais do projecto==> padrao*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7em;
+
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+h1,h2,h3{
+    padding-bottom: 20px;
+}
+
+p{
+    margin: 10px 0;
+}
+
+/* replicacoes do sistema */
+
+.container{
+    margin: auto;
+    max-width: 1100px;
+    overflow: auto;
+    padding: 0 20px;
+}
+
+/*configuraçoes iniciais do projecto*/
+
+@font-face {
+    font-family: 'anton';
+    src: url('/css/Anton-Regular.ttf');
+}
+
+
+@font-face {
+    font-family: 'indie';
+    src: url('/css/IndieFlower-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'mansalva';
+    src: url('/css/Mansalva-Regular.ttf');
+}
+
+
+
+
+
+
+
+
+

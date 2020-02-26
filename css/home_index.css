@@ -1,0 +1,44 @@
+:root
+{
+    --primarycolor:#333;
+    --branca:#fff;
+}
+
+
+/* fazendo navbar*/
+#navbar{
+    background: #333;
+    color:#fff;
+    overflow: auto;
+}
+
+#navbar a{
+    color:var(--branca) ;
+}
+
+#navbar h1{
+    float: left;
+    padding-top: 20px;
+}
+
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+
+#navbar ul li{
+    float: left;
+}
+
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#navbar ul li a:hover ,
+ #navbar ul li a.current{
+    background-color: #444;
+    color: #ebb987;
+}
