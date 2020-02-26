@@ -4,6 +4,12 @@
 @import url('');
 @import url('');
 
+:root {
+    --primarycolor: #333;
+    --branca: #fff;
+    --rosa:#ebb987;
+}
+
 /*configuraçoes iniciais do projecto==> padrao*/
 
 *{
@@ -40,7 +46,35 @@ p{
     padding: 0 20px;
 }
 
-/*configuraçoes iniciais do projecto*/
+.text-primary{
+    color:var(--rosa);
+}
+
+.lead{
+    font-size: 20px;
+}
+
+
+.btn{
+    display: inline-block;
+    font-size: 18px;
+    color:var(--branca);
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-light{
+  background:#f4f4f4;
+  color: #333;
+}
+
+.btn:hover{
+    background: var(--rosa);
+    columns: #333;
+}
+/*configuraçoes iniciais do projecto ==> FONTES*/
 
 @font-face {
     font-family: 'anton';
