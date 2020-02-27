@@ -66,8 +66,23 @@ p{
 }
 
 .btn-light{
-  background:#f4f4f4;
-  color: #333;
+    background:#f4f4f4;
+    color: #333;
+  }
+
+  .bg-dark{
+    background: #333;
+    color:#f4f4f4;
+  }
+
+  .bg-ligth{
+    background:#f4f4f4;
+    color: #333;
+  }
+
+.bg-primary{
+    background: var(--rosa);
+    color: var(--primarycolor);
 }
 
 .btn:hover{
