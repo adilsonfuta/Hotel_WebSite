@@ -20,10 +20,9 @@ function Mostrar(){
         setTimeout( ()=>mensagemSaida.remove(),3000 );
     }
     else{
-        PD.innerText="Preencha os Campos Para Falar Connosco:";
         document.querySelector('.mensagemSistema').classList.add('Sucesso');
         mensagemSaida.innerText="Obrigado por Enviar a sua mensagem "+nome;
-        setTimeout( ()=> mensagemSaida.remove(), 5000 );
+        setTimeout( ()=> mensagemSaida.remove(), 8000 );
     }
  
 }  
