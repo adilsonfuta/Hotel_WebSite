@@ -23,5 +23,32 @@
 .form-group input:focus,
 .form-group textarea:focus{
     outline: none;
-    color: var(--rosa);
+    border-color: var(--rosa);
+}
+
+.fonte_nova{
+    font-family: 'indie';
+}
+
+
+/* Classe ativa pelo Js*/
+
+.Sucesso{
+    font-family: 'indie';
+    color: #000;
+    background-color: rgb(46, 179, 46);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+.InSucesso{
+    font-family: 'indie';
+    color: #fff;
+    background-color: rgb(179, 55, 46);
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+
 }

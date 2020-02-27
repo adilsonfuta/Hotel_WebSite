@@ -1,20 +1,58 @@
 
+// CASO 1: USANDO O BOTÃO E UMA FUNCÃO TUDO FUNCIONA MUITO BEM
+
 const botao=document.querySelector('#btn_enviar');
+const mensagemSaida=document.querySelector('.mensagemSistema');
+
 botao.addEventListener('click',Mostrar);
 
 function Mostrar(){
-
+    
     let nome=document.querySelector('#nome').value;
     let email=document.querySelector('#email').value;
-
-     if(nome=='' && email==''){
-         alert(" Por favor queira Preencher os Campos ");
-     }
-     else{
-        alert(" Obrigado por Enviar a sua mensagem "+nome);
-
-     }
+    
+   
+    
+    if(nome=='' && email==''){
+        
+        document.querySelector('.mensagemSistema').classList.add('InSucesso');
+        mensagemSaida.innerText="Por favor Preencher os Campos";
+        setTimeout( ()=>mensagemSaida.remove(),3000 );
+    }
+    else{
+        PD.innerText="Preencha os Campos Para Falar Connosco:";
+        document.querySelector('.mensagemSistema').classList.add('Sucesso');
+        mensagemSaida.innerText="Obrigado por Enviar a sua mensagem "+nome;
+        setTimeout( ()=> mensagemSaida.remove(), 5000 );
+    }
  
+}  
 
+/*
 
+// CASO 2: USANDO O FORM E FUNCIONA ANONIMA
+
+const formulario=document.querySelector('#contact-form');
+const mensagemSaida=document.querySelector('.mensagemSistema');
+
+formulario.addEventListener('submit', enviarSMS_Submit);
+
+function enviarSMS_Submit(){
+    let nome=document.querySelector('#nome').value;
+    let email=document.querySelector('#email').value;
+    
+    
+    if(nome=='' && email==''){
+        
+        mensagemSaida.classList.add('InSucesso');
+        mensagemSaida.innerText="Por favor Preencher os Campos";
+        setTimeout( ()=>mensagemSaida.remove(),3000 );
+    }
+    else{
+        mensagemSaida.classList.add('Sucesso');
+        mensagemSaida.innerText="Obrigado por Enviar a sua mensagem "+nome;
+        setTimeout( ()=>mensagemSaida.remove(),3000 );        
+    }
 }
+
+*/

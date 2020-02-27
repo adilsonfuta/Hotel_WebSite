@@ -42,10 +42,13 @@
                 <h1 class="l-heading">
                     <span class="text-primary">Fale</span> Connosco
                 </h1>
-                <p>Preencha os Campos Para Falar Connosco:</p>
+                <p  id="ParaDecima">Preencha os Campos Para Falar Connosco:</p>
+                
+                <!-- somente ativada pelo js e exclui o paragrafo acima-->
+                <div class="mensagemSistema"></div>
 
-                <form action="process.php" method="POST">
-
+              <!--  <form action="process.php" method="POST">  --> 
+                <form action="" method="GET" >  
                     <div class="form-group">
                         <label for="nome">Nome</label>
                         <input type="text" id="nome" name="nome" required>
@@ -60,12 +63,40 @@
                         <label for="mensagem">Mensagem</label>
                         <textarea name="mensagem" id="mensagem"  name="mensagem"></textarea>
                     </div>
-                    
+
                     <button class="btn" id="btn_enviar" type="submit">Submeter Dados</button>
                 </form>
 
             </div>
         </section>
+
+            <!-- Aqui fica o formulario de contacto logos-->
+                <section id="contact-info" class="bg-dark">
+                    <div class="container">
+                        <div class="box fonte_nova">
+                            <!-- o codigo i abaixo é o icone-->
+                            <i class="fas fa-hotel fa-3x"></i>
+                            <h3>Endereço</h3>
+                            <p>Luanda, Viana KM 14, Rua do General</p>
+                        </div>
+                        <div class="box fonte_nova">
+                              <!-- o codigo i abaixo é o icone-->
+                              <i class="fas fa-phone fa-3x"></i>
+                            <h3>Telefone</h3>
+                            <p>(+244) 932 392 875</p>
+                            <p>(+244) 992 392 875</p>
+                            
+                        </div>
+                        <div class="box fonte_nova">
+                              <!-- o codigo i abaixo é o icone-->
+                              <i class="fas fa-envelope fa-3x"></i>
+                            <h3>Email</h3>
+                            <p>adilsonmariafuta@gmail.com</p>
+                        </div>
+                 
+
+                    </div>
+                </section>
 
 
 
