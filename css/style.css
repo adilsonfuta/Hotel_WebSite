@@ -1,13 +1,16 @@
 /*configuraçoes iniciais do projecto==> Incluindo outros css*/
 
 @import url('home_index.css');
-@import url('');
+@import url('_about.css');
 @import url('');
 
 :root {
     --primarycolor: #333;
     --branca: #fff;
     --rosa:#ebb987;
+    --valor1: 10px 0;
+    --valor2: 20px 0;
+    --valor3: 30px 0;
 }
 
 /*configuraçoes iniciais do projecto==> padrao*/
@@ -54,6 +57,9 @@ p{
     font-size: 20px;
 }
 
+.l-heading{
+    font-size: 40px;
+}
 
 .btn{
     display: inline-block;
@@ -69,6 +75,8 @@ p{
     background:#f4f4f4;
     color: #333;
   }
+
+  /* fundos bg.. */
 
   .bg-dark{
     background: #333;
@@ -89,6 +97,21 @@ p{
     background: var(--rosa);
     columns: #333;
 }
+
+/*paddingo padroes*/
+
+.py-1{
+    padding: var(--valor1);
+}
+
+.py-2{
+    padding: var(--valor2);
+}
+
+.py-3{
+    padding: var(--valor3);
+}
+
 /*configuraçoes iniciais do projecto ==> FONTES*/
 
 @font-face {

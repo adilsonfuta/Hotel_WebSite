@@ -1,0 +1,22 @@
+/*About INFO*/
+
+section#about-info .info-right{
+    float: right;
+    width: 50%;
+    min-height: 100%;
+}
+
+section#about-info .info-right img{
+    
+    display: block;
+    margin: auto;
+    width: 70%; 
+    border-radius: 50%;
+}
+
+
+section#about-info .info-left{
+    float: left;
+    width: 50%;
+    min-height: 100%;
+}
