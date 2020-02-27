@@ -21,6 +21,17 @@ section#about-info .info-left{
     min-height: 100%;
 }
 
+/*pequenas mudancas das letras*/
+.info-left h1{
+    padding-top: 10px;
+    font-family: 'indie';
+}
+
+#testimonials h2{
+    padding-top: 5px;
+    font-family: 'indie';
+}
+
 
 /*testemunhos do convidados*/
 
