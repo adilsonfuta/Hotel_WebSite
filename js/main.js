@@ -6,6 +6,7 @@ const mensagemSaida=document.querySelector('.mensagemSistema');
 
 botao.addEventListener('click',Mostrar);
 
+
 function Mostrar(){
     
     let nome=document.querySelector('#nome').value;
@@ -17,12 +18,16 @@ function Mostrar(){
         
         document.querySelector('.mensagemSistema').classList.add('InSucesso');
         mensagemSaida.innerText="Por favor Preencher os Campos";
-        setTimeout( ()=>mensagemSaida.remove(),3000 );
+        setTimeout( ()=>mensagemSaida.remove(), 3000 );
+        clearTimeout(mensagemSaida);
+        
+        
     }
     else{
         document.querySelector('.mensagemSistema').classList.add('Sucesso');
         mensagemSaida.innerText="Obrigado por Enviar a sua mensagem "+nome;
         setTimeout( ()=> mensagemSaida.remove(), 8000 );
+        clearTimeout(mensagemSaida);
     }
  
 }  
